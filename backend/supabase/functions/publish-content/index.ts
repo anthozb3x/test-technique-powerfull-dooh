@@ -57,7 +57,8 @@ serve(async (req) => {
         start_at: input.startAt,
         end_at: input.endAt,
         site_id: profile.site_id,
-        created_by: user.id
+        created_by: user.id,
+        status: 'published'
       })
       .select()
       .single()
